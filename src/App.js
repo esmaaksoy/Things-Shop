@@ -5,12 +5,7 @@ import ProductCard from "./Components/ProductCard";
 import Login from "./Pages/Login";
 function App() {
   return (
-    <>
-<Navbar/>
-<ProductCard/>
 
-<Footer/>
-    </>
   );
 }
 
