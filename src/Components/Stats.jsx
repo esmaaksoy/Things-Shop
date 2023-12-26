@@ -1,4 +1,4 @@
-
+import { stats } from "../helper/data"
 
 const Stats = () => {
   return (
@@ -15,31 +15,18 @@ const Stats = () => {
         </p>
       </div>
       <div className="mt-8 sm:mt-12">
-        <dl className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:divide-x sm:divide-gray-100">
-          <div className="flex flex-col px-4 py-8 text-center">
-            <dt className="order-last text-lg font-medium text-gray-500">
-              Total Sales
-            </dt>
-            <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-              $4.8m
-            </dd>
-          </div>
-          <div className="flex flex-col px-4 py-8 text-center">
-            <dt className="order-last text-lg font-medium text-gray-500">
-              Official Addons
-            </dt>
-            <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-              24
-            </dd>
-          </div>
-          <div className="flex flex-col px-4 py-8 text-center">
-            <dt className="order-last text-lg font-medium text-gray-500">
-              Total Addons
-            </dt>
-            <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-              86
-            </dd>
-          </div>
+        <dl className="grid grid-cols-2 sm:grid-cols-4 sm:divide-x sm:divide-gray-100">
+          {stats.map((item=>
+             <div className="flex flex-col px-4 py-8 text-center">
+             <dt className="order-last text-lg font-medium text-gray-500">
+               {item.title}
+             </dt>
+             <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
+           {item.data}
+             </dd>
+           </div>
+            ))}
+         
         </dl>
       </div>
     </div>

@@ -14,8 +14,9 @@ const AuthProvider = ({ children }) => {
   }
   //kullanıcı sayfayı refresh yaptığında tekrar login sayfasına dönüyordu bunu engellemek için sessionStorage kullandım
   useEffect(()=>{
-    sessionStorage.setItem("user", JSON.stringify(user))
-  },[user])
+    sessionStorage.setItem("user",JSON.stringify(user))
+  },[user])//!componentDidUpdate
+  
   return (
     <AuthContext.Provider value={{ user, login,logout }}>
       {children}

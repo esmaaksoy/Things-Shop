@@ -1,6 +1,4 @@
-
-
-const ProductCard = () => {
+const ProductCard = ({item}) => {
   return (
     <a href="#" className="group relative block">
     <div className="relative h-[350px] sm:h-[450px]">

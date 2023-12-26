@@ -5,9 +5,9 @@ import AppRouter from "./router/AppRouter";
 function App() {
   return (
 <AuthProvider>
-{/* <ProductProvider> */}
+<ProductProvider>
   <AppRouter/>
-{/* </ProductProvider> */}
+</ProductProvider>
 </AuthProvider>
 
   );
