@@ -1,10 +1,14 @@
 import "./App.css";
-import Footer from "./Components/Footer"
-import Navbar from "./Components/Navbar";
-import ProductCard from "./Components/ProductCard";
-import Login from "./Pages/Login";
+import AuthProvider from "./context/AuthProvider";
+import ProductProvider from "./context/ProductProvider";
+import AppRouter from "./router/AppRouter";
 function App() {
   return (
+<AuthProvider>
+<ProductProvider>
+  <AppRouter/>
+</ProductProvider>
+</AuthProvider>
 
   );
 }
