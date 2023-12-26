@@ -2,10 +2,15 @@ import { Route, Routes } from "react-router-dom";
 import Login from "../Pages/Login";
 import PrivateRouter from "./PrivateRouter";
 import Home from "../Pages/Home";
-import Products from "../Pages/Products"
+import Products from "../Pages/Products";
 import NotFound from "../Pages/NotFound";
+import ProductDetail from "../Pages/ProductDetail";
+import About from "../Pages/About"
+
 const AppRouter = () => {
   return (
+    <>
+  
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/dashboard" element={<PrivateRouter />}>
@@ -16,6 +21,7 @@ const AppRouter = () => {
       </Route>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
+    </>
   );
 };
 
