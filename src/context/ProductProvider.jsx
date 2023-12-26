@@ -1,12 +1,12 @@
-import { createContext, useEffect, useState, useContext } from 'react'
-import axios from 'axios';
-const ProductContext = createContext()
-const ProductProvider = ({children}) => {
-  const [products,setProducts] = useState([]);
-const [loading,setLoading] = useState(false);
-const [search,setSearch]= useState("");
-const getData = async()=>{
-  setLoading(true)
+import axios from "axios";
+import { createContext, useContext, useEffect, useState } from "react";
+const ProductContext = createContext();
+const ProductProvider = ({ children }) => {
+const [products, setProducts] = useState([]);
+const [loading, setLoading] = useState(false);
+const [search, setSearch] = useState("");
+const getData = async () => {
+  setLoading(true);
   try {
     const {data} = await axios(`https://dummyjson.com/products/search?q=${search}`)
     setProducts(data.products)
@@ -16,9 +16,9 @@ const getData = async()=>{
     setLoading(false)
   }
 }
-useEffect=(()=>{
-  getData()
-},[search])
+useEffect(() => {
+  getData();
+}, [search]);
   return (
   <ProductContext.Provider value={{products,loading,search,setSearch}}>
 {children}
