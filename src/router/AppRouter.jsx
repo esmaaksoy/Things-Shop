@@ -6,11 +6,11 @@ import Products from "../Pages/Products";
 import NotFound from "../Pages/NotFound";
 import ProductDetail from "../Pages/ProductDetail";
 import About from "../Pages/About"
-
+import ScrollToTop from "../Components/ScroolToTop";
 const AppRouter = () => {
   return (
     <>
-  
+  <ScrollToTop />
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/dashboard" element={<PrivateRouter />}>

@@ -4,7 +4,7 @@ import Testimonial from '../Components/Testimonial'
 const About = () => {
   return (
     <div>
-      <Stats/>
+      <Stats />
     <Testimonial/>
     </div>
   )

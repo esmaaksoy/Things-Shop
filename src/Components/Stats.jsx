@@ -2,13 +2,13 @@ import { stats } from "../helper/data"
 
 const Stats = () => {
   return (
-    <section className="bg-white ">
+    <section className="bg-white bg-[#E58C88]">
     <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h2 className="text-3xl font-bold text-white sm:text-4xl">
           Trusted by eCommerce Businesses
         </h2>
-        <p className="mt-4 text-gray-500 sm:text-xl">
+        <p className="mt-4 text-gray-500 sm:text-xl text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores
           laborum labore provident impedit esse recusandae facere libero harum
           sequi.

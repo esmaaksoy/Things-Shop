@@ -1,11 +1,11 @@
 import { useLocation, useParams,useNavigate } from "react-router-dom";
-
+import ErrorPage from "../Components/ErrorPage";
 const ProductDetail = ({item}) => {
   const {title:params} = useParams()
   const navigate = useNavigate();
   const { state } = useLocation();
+  if (!state) return <ErrorPage />;
   const { thumbnail, title, description, category, price, images } = state;
-
   return (
     <div className="cmx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
       <div className="mt-6 w-full ">
@@ -47,15 +47,15 @@ const ProductDetail = ({item}) => {
             <div className="flex justify-end gap-3 mt-4">
               <button
                 onClick={() => navigate(-1)}
-                className="border rounded-lg bg-yellow-300 text-white p-2"
+                className="border rounded-lg bg-teal-500 text-white p-2 w-20"
               >
-                Geri
+               Back
               </button>
               <button
                 onClick={() => navigate("/dashboard")}
-                className="border rounded-lg  bg-yellow-300 text-white p-2"
+                className="border rounded-lg  bg-red-300 text-white p-2 w-20"
               >
-                Ana Sayfaya Dön
+                Home
               </button>
             </div>
           </div>

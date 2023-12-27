@@ -12,17 +12,17 @@ const Home = () => {
           <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
             WELCOME 
             <strong className="block font-extrabold text-teal-400">
-             Things Shop
+             Things <span className='text-[#E58C88]'>Shop</span>
             </strong>
           </h1>
-          <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+          {/* <p className="mt-4 max-w-lg sm:text-xl/relaxed text-[#E58C88] ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
             illo tenetur fuga ducimus numquam ea!
-          </p>
+          </p> */}
           <div className="mt-8 flex flex-wrap gap-4 text-center">
             <a
               href="#"
-              className="block w-full rounded bg-teal-400 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-300 hover:text-black focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              className="block w-full rounded bg-[#E58C88] px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-200 hover:text-teal-800 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
             >
               Get Started
             </a>
