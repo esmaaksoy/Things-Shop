@@ -21,15 +21,15 @@ const Login = () => {
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 ">
       <div className="mx-auto max-w-lg bg-red-200 p-4 rounded-md">
-        <h1 className="text-center text-2xl font-bold text-teal-600 sm:text-3xl">
-          Things Store
+        <h1 className="text-center text-2xl font-bold text-white sm:text-3xl">
+          Things <span className="text-teal-600">Store</span>
         </h1>
         
         <form
          onSubmit={handleSubmit}
           className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
         >
-          <p className="text-center text-lg font-medium">
+          <p className="text-center text-lg font-medium text-teal-600">
             Sign in to your account
           </p>
           <div>
