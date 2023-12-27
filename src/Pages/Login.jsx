@@ -19,9 +19,9 @@ const Login = () => {
     }
   }
   return (
-    <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-lg">
-        <h1 className="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">
+    <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 ">
+      <div className="mx-auto max-w-lg bg-red-200 p-4 rounded-md">
+        <h1 className="text-center text-2xl font-bold text-teal-600 sm:text-3xl">
           Things Store
         </h1>
         
@@ -102,7 +102,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"
+            className="block w-full rounded-lg bg-teal-600 px-5 py-3 text-sm font-medium text-white"
           >
             Sign in
           </button>
