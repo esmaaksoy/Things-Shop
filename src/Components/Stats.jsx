@@ -2,7 +2,7 @@ import { stats } from "../helper/data"
 
 const Stats = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white ">
     <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -21,7 +21,7 @@ const Stats = () => {
              <dt className="order-last text-lg font-medium text-gray-500">
                {item.title}
              </dt>
-             <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
+             <dd className="text-4xl font-extrabold text-teal-600 md:text-5xl">
            {item.data}
              </dd>
            </div>
