@@ -1,20 +1,17 @@
 import { useProducts } from "../context/ProductProvider"
-
-
 const SearchInput = () => {
     const {search,setSearch} = useProducts()
   return (
-    <>
+
     <div className="relative w-[30%] mx-auto">
       <label htmlFor="Search" className="sr-only">
-        {" "}
-        Search{" "}
+        Search
       </label>
       <input
         type="text"
         id="Search"
         placeholder="Search products..."
-        className="w-full rounded-md border border-gray-500 py-2.5 pe-10 shadow-sm sm:text-sm"
+        className="w-full rounded-md border border-gray-500 py-2.5 pe-10 shadow-sm sm:text-sm p-4"
         value={search}
         autoComplete="off" //önerileri kapatmak için
         onChange={(e) => setSearch(e.target.value)}
@@ -39,7 +36,7 @@ const SearchInput = () => {
         </button>
       </span>
     </div>
-  </>
+ 
   
   )
 }
