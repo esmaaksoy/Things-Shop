@@ -1,7 +1,7 @@
-import { useLocation, useParams,useNavigate } from "react-router-dom";
+import { useLocation, useParams, useNavigate } from "react-router-dom";
 import ErrorPage from "../Components/ErrorPage";
-const ProductDetail = ({item}) => {
-  const {title:params} = useParams()
+const ProductDetail = ({ item }) => {
+  const { title: params } = useParams();
   const navigate = useNavigate();
   const { state } = useLocation();
   if (!state) return <ErrorPage />;
@@ -49,7 +49,7 @@ const ProductDetail = ({item}) => {
                 onClick={() => navigate(-1)}
                 className="border rounded-lg bg-teal-500 text-white p-2 w-20"
               >
-               Back
+                Back
               </button>
               <button
                 onClick={() => navigate("/dashboard")}
@@ -65,4 +65,4 @@ const ProductDetail = ({item}) => {
   );
 };
 
-export default ProductDetail
+export default ProductDetail;

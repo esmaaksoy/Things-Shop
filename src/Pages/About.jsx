@@ -1,13 +1,12 @@
-import React from 'react'
-import Stats from '../Components/Stats'
-import Testimonial from '../Components/Testimonial'
+import Stats from "../Components/Stats";
+import Testimonial from "../Components/Testimonial";
 const About = () => {
   return (
     <div>
       <Stats />
-    <Testimonial/>
+      <Testimonial />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

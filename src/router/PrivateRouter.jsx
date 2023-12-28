@@ -5,12 +5,11 @@ import { AuthContext } from "../context/AuthProvider";
 import Footer from "../Components/Footer";
 const PrivateRouter = () => {
   const { user } = useContext(AuthContext);
-
   return user ? (
     <>
       <Navbar />
       <Outlet />
-      <Footer/>
+      <Footer />
     </>
   ) : (
     <Navigate to="/" />

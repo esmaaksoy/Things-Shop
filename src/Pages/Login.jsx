@@ -1,32 +1,34 @@
-import { useContext,useState } from "react";
-import {AuthContext} from "../context/AuthProvider";
-import Swal from 'sweetalert2'
+import { useContext, useState } from "react";
+import { AuthContext } from "../context/AuthProvider";
+import Swal from "sweetalert2";
 const Login = () => {
-  const [email, setEmail] = useState("")
-  const [pass, setPass] = useState("")
-  const {login} = useContext(AuthContext)
-  const handleSubmit = (e)=>{
-    e.preventDefault()
-    if(email.toLowerCase()==="admin@admin.com" && pass.toLowerCase()==="admin"){
-      login({email,pass})
-    }else{
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const { login } = useContext(AuthContext);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      email.toLowerCase() === "admin@admin.com" &&
+      pass.toLowerCase() === "admin"
+    ) {
+      login({ email, pass });
+    } else {
       Swal.fire({
-        title:"Error",
+        title: "Error",
         text: "The user credentials are incorrect. Please try again.",
-        icon:"error",
-        iconColor:"red"
-      })
+        icon: "error",
+        iconColor: "red",
+      });
     }
-  }
+  };
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 ">
       <div className="mx-auto max-w-lg bg-red-200 p-4 rounded-md">
         <h1 className="text-center text-2xl font-bold text-white sm:text-3xl">
           Things <span className="text-teal-600">Store</span>
         </h1>
-        
         <form
-         onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
           className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
         >
           <p className="text-center text-lg font-medium text-teal-600">
@@ -42,7 +44,7 @@ const Login = () => {
                 className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
                 placeholder="Enter email"
                 value={email}
-                onChange={(e)=>setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
               <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
@@ -73,7 +75,7 @@ const Login = () => {
                 className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
                 placeholder="Enter password"
                 value={pass}
-                onChange={(e)=>setPass(e.target.value)}
+                onChange={(e) => setPass(e.target.value)}
                 required
               />
               <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
@@ -115,8 +117,7 @@ const Login = () => {
         </form>
       </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Login
+export default Login;

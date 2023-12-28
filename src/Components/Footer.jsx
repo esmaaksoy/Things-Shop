@@ -40,7 +40,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-                 Order Tracking
+                  Order Tracking
                 </a>
               </li>
               <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-                 Frequently Asked Questions
+                  Frequently Asked Questions
                 </a>
               </li>
               <li>
@@ -64,7 +64,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-               Payment Methods
+                  Payment Methods
                 </a>
               </li>
             </ul>
@@ -77,7 +77,6 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-               
                   Contact
                 </a>
               </li>
@@ -86,7 +85,6 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-           
                   Live Chat
                 </a>
               </li>
@@ -108,7 +106,6 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-             
                   Returns Policy{" "}
                 </a>
               </li>
@@ -117,7 +114,6 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-               
                   Refund Policy{" "}
                 </a>
               </li>
@@ -126,7 +122,6 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-                
                   Hiring Statistics{" "}
                 </a>
               </li>
@@ -197,7 +192,6 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-           
           </ul>
           <p className="text-xs text-gray-500">
             © 2023. Things Shop. All rights reserved.

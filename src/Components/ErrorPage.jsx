@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
-
 const ErrorPage = () => {
   const [count, setCount] = useState(10);
-
   useEffect(() => {
     const timer = setInterval(() => {
       setCount((prev) => (prev === 0 ? prev : prev - 1)); // prev sayesinde statein hep en gücenl değerini yakalayabiliyorum.

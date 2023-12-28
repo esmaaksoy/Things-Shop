@@ -1,8 +1,7 @@
-import { useProducts } from "../context/ProductProvider"
+import { useProducts } from "../context/ProductProvider";
 const SearchInput = () => {
-    const {search,setSearch} = useProducts()
+  const { search, setSearch } = useProducts();
   return (
-
     <div className="relative w-[30%] mx-auto">
       <label htmlFor="Search" className="sr-only">
         Search
@@ -36,9 +35,7 @@ const SearchInput = () => {
         </button>
       </span>
     </div>
- 
-  
-  )
-}
+  );
+};
 
-export default SearchInput
+export default SearchInput;
