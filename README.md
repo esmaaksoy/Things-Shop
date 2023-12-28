@@ -12,7 +12,7 @@ In this application, you can access products only after logging in. Once logged 
 
 <b>Built with</b> <br>
 <a href="#"><img src="https://w7.pngwing.com/pngs/403/269/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.png" alt="react" width="40"/></a>
-a href="https://tailwindcss.com/" target="\_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/></a>
+<a href="https://tailwindcss.com/" target="\_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/></a>
 <a href="#"><img src="https://sweetalert2.github.io/images/sweetalert2-social.png" alt="sweetalert2" width="40"/></a>
 
 ## How to use?
